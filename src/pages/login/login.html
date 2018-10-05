@@ -1,18 +1,28 @@
-<!--
-  Generated template for the LoginPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>login</ion-title>
-  </ion-navbar>
+   <ion-title>Inicio de Sesion</ion-title>
+   </ion-navbar>
+  </ion-header>
 
-</ion-header>
+  <ion-content padding>
+          <ion-card align-center style="  height:45%;
+          width:85%;
 
+          margin: auto;border-radius: 50% ; ">
+              <img src="../assets/imgs/logo2.jpg" alt="" style="width:100%;margin:auto;height:100%; border-radius: 50%;">
+          </ion-card>
 
-<ion-content padding>
-
-</ion-content>
+   <ion-list>
+    <ion-item>
+     <ion-label floating>Usuario</ion-label>
+     <ion-input type="text" value="" #username></ion-input>
+    </ion-item>
+    <ion-item>
+     <ion-label floating>Contraseña</ion-label>
+     <ion-input type="password" #password></ion-input>
+    </ion-item>
+   </ion-list>
+   <div padding>
+    <button block ion-button (click)="login() " style="border-radius: 10px;">INICIAR SESIÓN</button>
+   </div> 
+  </ion-content>
