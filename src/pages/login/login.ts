@@ -6,10 +6,10 @@ import { HomePage } from '../home/home';
 @IonicPage()
 @Component({
   selector: 'page-login',
-  templateUrl: 'login.html'
-
+  templateUrl: 'login.html',
 })
 export class LoginPage {
+
   @ViewChild('username') user;
   @ViewChild('password') password;
   constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {}
@@ -30,4 +30,5 @@ export class LoginPage {
      alert.present();
     }
    }
+
 }
