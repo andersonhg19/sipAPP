@@ -17,21 +17,21 @@ import { OymPage } from '../pages/oym/oym';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = LoginPage;
+  rootPage: any = HomePage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, component: any,icon: string}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Inicio', component: HomePage },
-      { title: 'Actas', component: ActasPage },
-      { title: 'OyM', component: OymPage },
-      { title: 'ProgramacióN', component: ProgrammationPage },
-      { title: 'Buscar', component: SearchPage },
-      { title: 'Buscar OyM', component: SearchOymPage },
+      { title:'Inicio', component: HomePage ,icon:"home"},
+      { title: 'Actas', component: ActasPage ,icon:"book"},
+      { title: 'OyM', component: OymPage ,icon:"hammer"},
+      { title: 'Programación', component: ProgrammationPage ,icon:"calendar" },
+      { title: 'Buscar', component: SearchPage ,icon:"search"},
+      { title: 'Buscar OyM', component: SearchOymPage ,icon:"card"}
       
 
     ];
